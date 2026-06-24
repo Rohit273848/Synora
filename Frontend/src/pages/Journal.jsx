@@ -251,7 +251,7 @@ export default function Journal() {
       <div className="card-glass" style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
         <div>
           <h4 style={{ fontSize: '1.1rem', fontWeight: 700 }}>New Reflection Workspace</h4>
-          <p style={{ color: 'var(--text-secondary)', fontSize: '0.75rem', marginTop: '2px' }}>Capture daily updates and reflections into your Second Brain.</p>
+          <p style={{ color: 'var(--text-secondary)', fontSize: '0.75rem', marginTop: '2px' }}>Capture daily updates and reflections into Synora.</p>
         </div>
 
         {editorSuccess && (
