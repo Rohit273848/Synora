@@ -30,7 +30,7 @@ export default function Resources() {
         let title = 'Saved Knowledge Node';
         let type = 'Website';
         let tags = ['Backend'];
-        let summary = 'Saved web context digested by Second Brain AI engine.';
+        let summary = 'Saved web context digested by Synora AI engine.';
 
         if (isYoutube) {
           title = 'Advanced Caching Patterns with Redis';
@@ -142,7 +142,7 @@ export default function Resources() {
             justifyContent: 'space-between'
           }}>
             <span>Scraped successfully! Saved: <strong>{scrapedInfo.title}</strong> ({scrapedInfo.type})</span>
-            <span style={{ fontSize: '0.7rem', opacity: 0.8 }}>Persisted in Second Brain database</span>
+            <span style={{ fontSize: '0.7rem', opacity: 0.8 }}>Persisted in Synora database</span>
           </div>
         )}
       </div>

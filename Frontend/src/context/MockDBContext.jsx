@@ -235,7 +235,7 @@ const initialGoals = [
   },
   {
     id: 'goal-2',
-    title: 'Build Second Brain AI Prototype',
+    title: 'Build Synora AI Prototype',
     category: 'Weekly',
     progress: 80,
     status: 'In Progress',
@@ -532,7 +532,7 @@ export const MockDBProvider = ({ children }) => {
       citations.goals = goals.filter(g => g.title.toLowerCase().includes('developer') || g.milestones.some(m => m.name.toLowerCase().includes('mongo')));
       citations.journals = journals.filter(j => j.text.toLowerCase().includes('mongo'));
 
-      textResponse = `Based on your Second Brain, you have been extensively studying and configuring **MongoDB** for backend application systems.
+      textResponse = `Based on your Synora database, you have been extensively studying and configuring **MongoDB** for backend application systems.
 
 ### 💡 Key Insights:
 1. **Aggregations & Pipelines**: You have been learning advanced aggregation pipelines. Your notes detail stages like \`$match\`, \`$group\`, and \`$lookup\`. You documented that structuring \`$match\` first is crucial to preserve index mappings.
@@ -548,7 +548,7 @@ Your learning roadmap shows **MongoDB Aggregations** at **70% completion**.`;
       citations.tasks = tasks.filter(t => t.title.toLowerCase().includes('redis') || t.description.toLowerCase().includes('redis'));
       citations.journals = journals.filter(j => j.text.toLowerCase().includes('redis'));
 
-      textResponse = `Based on your Second Brain records, you are implementing **Redis** as a caching and performance optimization layer.
+      textResponse = `Based on your Synora records, you are implementing **Redis** as a caching and performance optimization layer.
 
 ### 💡 Key Insights:
 1. **Consistency Patterns**: Your notes contain detailed research on Cache Invalidation. You are comparing **Cache-Aside** (lazy load) with **Write-Through** write pipelines.
@@ -567,7 +567,7 @@ Your progress roadmap shows **Redis Caching** at **20% completion**.`;
 
 ### 🎯 Monthly & Weekly Goals Status:
 - **Become Backend Developer (Monthly)**: You are currently at **75% progress**. You completed core Node.js event loops and SQL/Mongo mastering. The next target is integrating Redis caching mechanisms.
-- **Build Second Brain AI Prototype (Weekly)**: At **80% progress**. The styles, database context, and search indexer are complete. You are currently polishing CSS custom layouts.
+- **Build Synora AI Prototype (Weekly)**: At **80% progress**. The styles, database context, and search indexer are complete. You are currently polishing CSS custom layouts.
 - **Read 12 Tech Books (Yearly)**: Currently at **33% progress** (4 out of 12 milestones). You have finished Martin Kleppmann's *Designing Data-Intensive Applications* and Uncle Bob's *Clean Architecture*.
 
 You have completed **2 key tasks** recently, including staging environment deployments on AWS ECS.`;
@@ -598,7 +598,7 @@ Your primary path is structured around the **Become Backend Developer** goal (75
       if (matchedNotes.length > 0 || matchedResources.length > 0) {
         citations.notes = matchedNotes;
         citations.resources = matchedResources;
-        textResponse = `I found related matches in your Second Brain database regarding "${query}".
+        textResponse = `I found related matches in your Synora database regarding "${query}".
 
 ### 🔍 Retrieved Materials:
 ${matchedNotes.map(n => `- **Note**: [${n.title}] (${n.summary})`).join('\n')}
@@ -606,11 +606,11 @@ ${matchedResources.map(r => `- **Resource** [${r.type}]: ${r.title} (${r.summary
 
 How can I help you extract further details from these saved notes or videos?`;
       } else {
-        textResponse = `I searched your Second Brain (Notes, Resources, Tasks, Goals, and Journals) but found no direct references to "${query}". 
+        textResponse = `I searched your Synora database (Notes, Resources, Tasks, Goals, and Journals) but found no direct references to "${query}". 
 
 However, here is what you are actively working on today:
 - Notes on **React Server Components** and **Redis caching**
-- Weekly goal: **Build Second Brain AI Prototype** (80% complete)
+- Weekly goal: **Build Synora AI Prototype** (80% complete)
 - Urgent Task: **Optimize MongoDB aggregations**
 
 Would you like to write a new note or save a resource web link about "${query}" to add it to your knowledge base?`;
